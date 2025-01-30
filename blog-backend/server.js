@@ -432,6 +432,10 @@ mongoose
   .then(() => console.log("MongoDB connected"))
   .catch((err) => console.error("Error connecting to MongoDB:", err));
 
+app.get("/",(req,res)=>{
+    res.json("Hello");
+})
+
 /**
  * Route to Create a New Post
  */
